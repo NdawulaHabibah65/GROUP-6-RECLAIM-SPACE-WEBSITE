@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181818;
+    color: #ffd700;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #111;
+    color: #ffd700;
+    padding: 16px 0;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 32px;
+    letter-spacing: 1px;
+    color: #ffd700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 32px;
+}
+
+.nav-links li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    background: #ffd700;
+    color: #181818;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    padding: 32px 24px;
+}
+
+.about-section h1 {
+    font-size: 2.2rem;
+    color: #ffd700;
+    margin-bottom: 16px;
+}
+
+.about-section h2 {
+    color: #ffd700;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.team-list {
+    list-style: disc inside;
+    margin: 0 0 16px 0;
+    padding-left: 16px;
+}
+
+.team-list li {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 6px;
+    }
+    .logo, .nav-links {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+}

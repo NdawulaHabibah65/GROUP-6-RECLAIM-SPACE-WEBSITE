@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it Works - Reclaim Space</title>
+    <link rel="stylesheet" href="how_it_works.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Reclaim Space</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="how_it_works.html" class="active">How it Works</a></li>
+                
+                <li><a href="../reporting_items/lost.html">Report Lost Item</a></li>
+                <li><a href="../reporting_items/found.html">Report Found Item</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="github.html">GitHub</a></li>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <section class="how-it-works-section">
+                <h1 class="main-title">Submit Lost & Found Reports</h1>
+                
+                <div class="step-content">
+                    <p>Install the app onto your mobile devices. At the first launch, the app will take you to the "Registration" screen. You'll need to create an account with your email and password to get started.</p>
+                    
+                    <p>When you need to report a lost item or found item, launch the app and log in with your credentials. The main dashboard presents you with two primary options:</p>
+                    
+                    <div class="button-options">
+                        <div class="option-card lost-option">
+                            <h3>🔍 Lost Item</h3>
+                            <p>Report something you've lost</p>
+                        </div>
+                        <div class="option-card found-option">
+                            <h3>✋ Found Item</h3>
+                            <p>Report something you've found</p>
+                        </div>
+                    </div>
+                    
+                    <p>After selecting either "Lost" or "Found", you'll be prompted to provide detailed information about the item. The app will ask for:</p>
+                    
+                    <ul class="info-list">
+                        <li><strong class="highlight">Item Name:</strong> What is the item? (e.g., iPhone, wallet, keys)</li>
+                        <li><strong class="highlight">Photo:</strong> Take or upload a clear photo of the item</li>
+                        <li><strong class="highlight">Description:</strong> Detailed description including color, brand, distinctive features</li>
+                        <li><strong class="highlight">Category:</strong> Select from predefined categories (Electronics, Accessories, Documents, Jewelry, etc.)</li>
+                        <li><strong class="highlight">Location:</strong> Where was it lost/found (automatically detected via GPS or manually entered)</li>
+                        <li><strong class="highlight">Date & Time:</strong> When did you lose/find it</li>
+                    </ul>
+                    
+                    <p>You can also optionally add symptoms or circumstances related to the loss/discovery. If you wish to send a personal note or question to other users, please include it in the additional comments section.</p>
+                    
+                    <p>Please only enter information that you are comfortable with sharing on the public Reclaim Space platform.</p>
+                </div>
+            </section>
+
+            <section class="how-it-works-section">
+                <h2 class="section-title">Visualize Lost & Found Reports</h2>
+                
+                <div class="step-content">
+                    <p>At the same time your lost/found report is added to the public Reclaim Space interactive map visualization. A triangle icon shows the color-coded category of your item that represents your report. Your exact location is obscured on the map by slightly shifting the coordinates to protect your privacy.</p>
+                    
+                    <p>Tapping on a report icon on the map displays basic information about the item without revealing personal contact details. Users can then choose to connect through the app's secure messaging system.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h4 class="highlight">📍 Location Mapping</h4>
+                            <p>All reports appear on an interactive map with privacy protection</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4 class="highlight">🔒 Secure Messaging</h4>
+                            <p>Connect with other users without sharing personal information</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4 class="highlight">📊 Smart Categories</h4>
+                            <p>Color-coded system makes it easy to find relevant items</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4 class="highlight">⏰ Real-time Updates</h4>
+                            <p>Get notified when similar items are reported nearby</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="app-preview">
+                <div class="phone-mockup">
+                    <div class="screen">
+                        <div class="app-header">
+                            <h4>Reclaim Space</h4>
+                        </div>
+                        <div class="login-form">
+                            <h5>Welcome Back</h5>
+                            <div class="input-field">
+                                <input type="email" placeholder="Email" readonly>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" placeholder="Password" readonly>
+                            </div>
+                            <button class="login-btn">Log In</button>
+                        </div>
+                        <div class="main-buttons">
+                            <button class="action-btn lost-btn">
+                                <span>🔍</span>
+                                <div>
+                                    <strong>Lost Item</strong>
+                                    <small>Report something missing</small>
+                                </div>
+                            </button>
+                            <button class="action-btn found-btn">
+                                <span>✋</span>
+                                <div>
+                                    <strong>Found Item</strong>
+                                    <small>Report something discovered</small>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3 class="section-title">Get Started Today</h3>
+                <div class="app-downloads">
+                    <a href="#" class="app-btn">📱 Download iOS</a>
+                    <a href="#" class="app-btn">🤖 Download Android</a>
+                </div>
+                <p class="download-note">Free to download and use. Available on all major platforms.</p>
+            </div>
+        </aside>
+    </div>
+
+      <script>
+    document.getElementById('lost').addEventListener('change', function() {
+        if (this.checked) {
+            window.location.href = '../reporting_items/lost.html';
+        }
+    });
+    document.getElementById('found').addEventListener('change', function() {
+        if (this.checked) {
+            window.location.href = '../reporting_items/found.html';
+        }
+    });
+    </script>
+</body>
+</html>

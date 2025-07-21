@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item - Reclaim Space</title>
+    <link rel="stylesheet" href="lost.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Reclaim Space</div>
+            <ul class="nav-links">
+                <li><a href="../pages/index.html">Overview</a></li>
+                <li><a href="../pages/how_it_works.html">How it Works</a></li>
+                
+                <li><a href="reporting_items/lost.html" class="active">Report Item</a></li>
+                <li><a href="../reporting_items/found.html">Found Item</a></li>
+                <li><a href="../pages/about_us.html">About Us</a></li>
+                <li><a href="../pages/github.html">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                🔍 Report Lost Item
+            </h1>
+            <p class="page-subtitle">Help us help you find what you've lost by providing detailed information</p>
+        </div>
+
+        <form class="form-container">
+            <div class="form-section">
+                <h2 class="section-title">Item Information</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="item-name">Item Name <span class="required">*</span></label>
+                        <input type="text" id="item-name" name="itemName" required placeholder="e.g., iPhone 15 Pro">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Category <span class="required">*</span></label>
+                        <select id="category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing & Accessories</option>
+                            <option value="jewelry">Jewelry</option>
+                            <option value="bags">Bags & Wallets</option>
+                            <option value="keys">Keys</option>
+                            <option value="documents">Documents & Cards</option>
+                            <option value="sports">Sports Equipment</option>
+                            <option value="books">Books & Stationery</option>
+                            <option value="toys">Toys & Games</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="description">Detailed Description <span class="required">*</span></label>
+                    <textarea id="description" name="description" required placeholder="Please provide a detailed description including color, size, brand, model, distinctive features, etc."></textarea>
+                    <div class="help-text">The more details you provide, the better chance someone can identify your item</div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2 class="section-title">Location & Time</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="location">Where did you lose it? <span class="required">*</span></label>
+                        <input type="text" id="location" name="location" required placeholder="e.g., Central Park, Coffee Shop on 5th St">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date-lost">Date Lost <span class="required">*</span></label>
+                        <input type="date" id="date-lost" name="dateLost" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="time-lost">Approximate Time</label>
+                        <input type="time" id="time-lost" name="timeLost">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="circumstances">Circumstances</label>
+                        <input type="text" id="circumstances" name="circumstances" placeholder="e.g., dropped while jogging, left on bus seat">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2 class="section-title">Photos</h2>
+                
+                <div class="form-group full-width">
+                    <label for="photos">Upload Photos (if available)</label>
+                    <div class="file-upload">
+                        <input type="file" id="photos" name="photos" multiple accept="image/*">
+                        <div class="file-upload-label">
+                            📸 Click to upload photos or drag and drop
+                            <div class="help-text">You can upload multiple photos. Accepted formats: JPG, PNG, GIF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="contact-section">
+                    <h2 class="section-title">Contact Information</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="contact-name" name="contactName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Optional but recommended">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-contact">Preferred Contact Method</label>
+                            <select id="preferred-contact" name="preferredContact">
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="notifications" name="notifications" checked>
+                        <label for="notifications">Send me notifications about similar found items</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" name="additionalInfo" placeholder="Any other details that might help identify your item or circumstances around losing it..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                <a href="#" class="btn-secondary">Cancel</a>
+                <button type="submit" class="btn-submit">Submit Lost Item Report</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // File upload preview
+        document.getElementById('photos').addEventListener('change', function(e) {
+            const label = document.querySelector('.file-upload-label');
+            const files = e.target.files;
+            
+            if (files.length > 0) {
+                label.innerHTML = `📸 ${files.length} file(s) selected`;
+            } else {
+                label.innerHTML = `📸 Click to upload photos or drag and drop
+                    <div class="help-text">You can upload multiple photos. Accepted formats: JPG, PNG, GIF</div>`;
+            }
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            
+            // Here you would normally send the data to your server
+            alert('Lost item report submitted successfully! We\'ll notify you if anyone reports finding a matching item.');
+            
+            // Reset form or redirect
+            // this.reset();
+        });
+    </script>
+</body>
+</html>

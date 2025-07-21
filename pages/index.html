@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclaim Space - Lost & Found</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Reclaim Space</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="how_it_works.html">How it Works</a></li>
+               
+                <li><a href="../reporting_items/lost.html">Report Item</a></li>
+                <li> <a href="../reporting_items/found.html">Found Item</a></li>
+                <li> <a href="../pages/about_us.html">About Us</a></li>
+                <li><a href="../pages/github.html">GitHub</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <h1 class="main-title">Find, Report, Reunite!</h1>
+            
+            <div class="description">
+                <p>Lost something valuable? Found an item that doesn't belong to you? <span class="highlight">Reclaim Space</span> is your community-powered platform for reuniting lost items with their rightful owners across the city.</p>
+                
+                <p>Every day, countless items go missing - phones, wallets, keys, jewelry, and cherished personal belongings. Our platform makes it easier than ever to report lost items and help others find what they've lost.</p>
+            </div>
+
+            <div class="stats-section">
+                <h2 class="stats-title">Making a Difference in Our Community</h2>
+                <p>Since our launch, <span class="highlight">Reclaim Space</span> has successfully facilitated over <span class="highlight">1,200 reunions</span> between lost items and their owners. Our community of helpful citizens continues to grow, with new success stories every day.</p>
+                
+                <p>In our most recent <span class="highlight">community impact report</span>, we found that "Items reported within the first 24 hours have an 85% higher chance of being reunited with their owners" and gave our platform a <span class="highlight">4.8/5 star rating</span> for user satisfaction and successful reunions.</p>
+                
+                <p><span class="highlight">Reclaim Space</span> crowdsources lost and found reports so we can all better track how items move through our community and increase the chances of successful returns.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="app-downloads">
+                <a href="#" class="app-btn">📱 Get App</a>
+                <a href="#" class="app-btn">🌐 Web App</a>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">Quick Item Report</h3>
+                
+                <div class="form-group">
+                    <label>What type of report is this?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="lost" name="report-type" value="lost">
+                            <label for="lost">🔍 I lost something</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="found" name="report-type" value="found">
+                            <label for="found">✋ I found something</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="spotted" name="report-type" value="spotted">
+                            <label for="spotted">👀 I saw something suspicious</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="returned" name="report-type" value="returned">
+                            <label for="returned">✅ Item was returned!</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-description">Describe the item: <em>(required)</em></label>
+                    <input type="text" id="item-description" placeholder="e.g., black leather wallet, iPhone 14, gold wedding ring">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location where lost/found: <em>(optional)</em></label>
+                    <input type="text" id="location" placeholder="e.g., Central Park, Main Street, Coffee Shop on 5th">
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-notes">Additional details or comments: <em>(optional)</em></label>
+                    <textarea id="additional-notes" rows="4" placeholder="e.g., any distinctive features, contact information, reward offered, etc."></textarea>
+                </div>
+
+                <button class="submit-btn">Submit Report</button>
+
+                <p class="disclaimer">
+                    Please only enter information that you are comfortable with sharing anonymously through the Reclaim Space app.
+                    <br><br>
+                    Also, please refrain from using offensive language in your report. We are working with community partners to keep this space safe for all.
+                </p>
+            </div>
+        </aside>
+    </div>
+          
+
+
+</body>
+</html>
