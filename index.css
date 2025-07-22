@@ -226,9 +226,12 @@ textarea:focus, input[type="text"]:focus {
     }
     
     .nav-links {
-         flex-direction: column;
+         flex-direction: row;
         gap: 1rem;
         margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
         padding: 0 8px;
         display: flex; /* Make sure nav is visible */
         background: #1a1a1a;
