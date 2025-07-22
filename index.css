@@ -229,3 +229,33 @@ textarea:focus, input[type="text"]:focus {
         display: none;
     }
 }
+
+
+@media (max-width: 600px) {
+    .container, .main-content, .sidebar {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    .main-title, .stats-title, .section-title {
+        font-size: 1.2rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+        margin-right: 0;
+        padding: 0 8px;
+    }
+    .logo {
+        text-align: center;
+        margin-left: 0;
+    }
+    .form-group, .app-downloads, .report-section {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    input, textarea, button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
