@@ -212,7 +212,7 @@ textarea:focus, input[type="text"]:focus {
     font-style: italic;
 }
 
-/* IMPROVED MOBILE RESPONSIVENESS */
+
 
 /* Tablet styles */
 @media (max-width: 1024px) {

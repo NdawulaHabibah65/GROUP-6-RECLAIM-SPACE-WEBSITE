@@ -30,11 +30,7 @@
             <p class="page-subtitle">Help reunite someone with their lost belongings</p>
         </div>
 
-        <div class="info-box">
-            <h3>Thank you for being a good Samaritan!</h3>
-            <p>By reporting found items, you're helping create a more connected community where lost belongings can find their way back home.</p>
-        </div>
-
+       
         <form class="form-container">
             <div class="form-section">
                 <h2 class="section-title">Item Information</h2>
@@ -49,15 +45,8 @@
                         <label for="category">Category <span class="required">*</span></label>
                         <select id="category" name="category" required>
                             <option value="">Select a category</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="clothing">Clothing & Accessories</option>
-                            <option value="jewelry">Jewelry</option>
-                            <option value="bags">Bags & Wallets</option>
-                            <option value="keys">Keys</option>
-                            <option value="documents">Documents & Cards</option>
-                            <option value="sports">Sports Equipment</option>
-                            <option value="books">Books & Stationery</option>
-                            <option value="toys">Toys & Games</option>
+                            <option value="id">ID</option>
+                            <option value="Person">Person</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -65,9 +54,8 @@
 
                 <div class="form-group full-width">
                     <label for="description">Detailed Description <span class="required">*</span></label>
-                    <textarea id="description" name="description" required placeholder="Describe the item in detail: color, size, brand, condition, distinctive features. Avoid mentioning personal information that might be inside."></textarea>
-                    <div class="help-text">Be descriptive but avoid sharing personal information (names, addresses) that might be in/on the item</div>
-                </div>
+                    <textarea id="description" name="description" required placeholder="Describe the item in detail. Avoid mentioning personal information that might be inside."></textarea>
+                    
             </div>
 
             <div class="form-section">
@@ -76,7 +64,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="location">Where did you find it? <span class="required">*</span></label>
-                        <input type="text" id="location" name="location" required placeholder="e.g., Bus stop on Main St, Library reading room">
+                        <input type="text" id="location" name="location" required placeholder="e.g., Library reading room">
                     </div>
                     
                     <div class="form-group">
@@ -91,10 +79,7 @@
                         <input type="time" id="time-found" name="timeFound">
                     </div>
                     
-                    <div class="form-group">
-                        <label for="circumstances">How/Where exactly?</label>
-                        <input type="text" id="circumstances" name="circumstances" placeholder="e.g., under a bench, in the bathroom, on the counter">
-                    </div>
+                   
                 </div>
             </div>
 
@@ -114,40 +99,7 @@
                 </div>
             </div>
 
-            <div class="form-section">
-                <div class="availability-section">
-                    <h2 class="section-title">Item Status & Handoff</h2>
-                    
-                    <div class="form-group full-width">
-                        <label>Where is the item currently? <span class="required">*</span></label>
-                        <div class="radio-group">
-                            <div class="radio-option">
-                                <input type="radio" id="with-me" name="itemLocation" value="with-me" required>
-                                <label for="with-me">I have it with me</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" id="turned-in" name="itemLocation" value="turned-in" required>
-                                <label for="turned-in">I turned it in to authorities/lost & found</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" id="safe-place" name="itemLocation" value="safe-place" required>
-                                <label for="safe-place">I have it stored in a safe place</label>
-                            </div>
-                        </div>
-                    </div>
+           
 
-                    <div class="form-group full-width" id="authority-details" style="display: none;">
-                        <label for="authority-location">Where did you turn it in?</label>
-                        <input type="text" id="authority-location" name="authorityLocation" placeholder="e.g., Campus Security Office, Police Station, Store Manager">
-                        <div class="help-text">Please specify the location and any reference number if provided</div>
-                    </div>
                     
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact-method">Preferred Contact Method</label>
-                            <select id="contact-method" name="contactMethod">
-                                <option value="email">Email</option>
-                                <option value="phone">Phone</option>
-                                <option value="text">Text Message</option>
-                            </select>
-                        </div>
+                    
