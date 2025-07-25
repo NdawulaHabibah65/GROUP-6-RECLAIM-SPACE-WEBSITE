@@ -106,26 +106,7 @@ nav {
     border: 2px solid #ffd700;
 }
 
-.app-downloads {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
 
-.app-btn {
-    background-color: #ffd700;
-    color: #000;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-.app-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
-}
 
 .report-section {
     margin-top: 2rem;
